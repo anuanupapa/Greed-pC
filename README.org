@@ -1,0 +1,81 @@
+#+TITLE: Readme
+
+* Structure
+  There are 2 objects which are used by the modules:
+1. adj_mat -> Adjacency matrix (ndarray)
+2. player_arr -> Array containing the players taking
+   part in the iterated PGG. (player in ndarray)
+These two numpy arrays are initialized in settings.py
+These two numpy arrays act as arguments for the
+modules 2, 3 and 4.
+* Modules
+** players.py (testable)
+   This module contains the  class 'player'.
+   player contains the attributes:
+   1.Minimum payoff 2.Maximum payoff 3.Aspiration
+   4.Satisfaction 5.Action 6.Greediness 7.Memory
+   8.Payoff 9.Action(C/D) 10.Tremble
+
+   **Note: Two player PD for different values of greed
+        gives a familiar graph of cooperation vs greed.
+        Run players.py to see the graph.
+
+** PGG.py (testable)
+   Method of PGG carried out between a network of
+   players.
+** update_decide.py (testable)
+   The attributes of all the player objects stored inside player_arr are updated + The unsatisfied players change their action or change their neighbours according to the given rule.
+** Measure.py (Fetches attributes for plot)
+   Records the data which will be plotted.
+
+** settings.py (Initialization)
+   Initializes the player_arr and adj_mat.
+** RH_PS.py (Main)
+   Main program.
+   Uses all the other modules to simulate the problem.
+
+   **Disable print functions present inside
+   PGG.py(1)   
+   and
+   update_decide.py(3)
+   they are marked by ###Comment while RH_PS.py###
+   followed by a long tail, so that it's easier to find.
+
+
+For better testing some print functions are enabled.
+Those should be disabled when running RH_PS.py
+
+
+
+----------
+RH_PS.py  (main)
+----------
+----------
+
+----------
+
+
+players.py (testable)
+----------
+
+----------
+
+----------
+PGG.py    (testable)
+----------
+----------
+
+----------
+update_decide.py (testable)
+----------
+----------
+
+----------
+settings.py
+----------
+----------
+
+----------
+Measure.py
+----------
+----------

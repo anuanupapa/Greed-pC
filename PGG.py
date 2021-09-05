@@ -33,7 +33,11 @@ def payoff_update(payoff, p_arr):
         p_arr[i].set_payoff(payoff[i])
 
     ###Comment while RH_PS.py###-------------------------------------------------------------------------------------
+<<<<<<< HEAD
     #[print('player',i,p_arr[i].payoff) for i in range(N)]
+=======
+    [print('player',i,p_arr[i].payoff) for i in range(N)]
+>>>>>>> 7bb108783e2256362ad1ff8e19552e8007ca021e
 #-------------------------------------------------
 
     

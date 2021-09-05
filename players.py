@@ -1,6 +1,9 @@
 import numpy as np
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7bb108783e2256362ad1ff8e19552e8007ca021e
 class player:
 
     
@@ -56,8 +59,12 @@ if __name__=='__main__':
     gr_arr=[]
     wind=2000 #Window averaging
     
+<<<<<<< HEAD
     for gr in np.arange(0,1.002,0.025): #greed array
         print(gr)
+=======
+    for gr in np.linspace(0,1,50): #greed array
+>>>>>>> 7bb108783e2256362ad1ff8e19552e8007ca021e
         p1 = player(greed=gr, sd=0.1)
         p2 = player(greed=gr, sd=0.1)
         counter1=0
@@ -87,5 +94,9 @@ if __name__=='__main__':
     plt.xlabel('greed')
     plt.ylabel('cooperation fraction averaged last '+str(wind)+' rounds')
     plt.title('cooperation fraction VS greed t='+str(n)+'rounds')
+<<<<<<< HEAD
     plt.savefig('2player_greedVScoop.png')
+=======
+    #plt.savefig('2player_greedVScoop.png')
+>>>>>>> 7bb108783e2256362ad1ff8e19552e8007ca021e
     plt.show()

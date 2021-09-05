@@ -16,7 +16,11 @@ def update_and_decide(AM, player_arr):
 
     #Loop over the unsatisfied players
     unsatisfied_players=np.where(satisfaction_arr<0)[0]
+<<<<<<< HEAD
     #print('unsatisfied player indices',unsatisfied_players) ###Comment while RH_PS.py###--------------------------------------------------------
+=======
+    print('unsatisfied player indices',unsatisfied_players) ###Comment while RH_PS.py###--------------------------------------------------------
+>>>>>>> 7bb108783e2256362ad1ff8e19552e8007ca021e
     for unpInd in unsatisfied_players:
         player_arr[unpInd].set_action() #The probability evaluation is inside method
 
@@ -34,7 +38,11 @@ def modify_connections(AM_stat, AM_dyn, sat, index):
     
     #edge addition using edge_add
     if np.random.random()<val:    #Probability checking for edge addition
+<<<<<<< HEAD
         #print('player', index, 'wants to add edge')      ###Comment while RH_PS.py###----------------------------------------------------------
+=======
+        print('player', index, 'wants to add edge')      ###Comment while RH_PS.py###----------------------------------------------------------
+>>>>>>> 7bb108783e2256362ad1ff8e19552e8007ca021e
         
         add_ind=choose(np.sort(np.setdiff1d(np.where(AM_stat[index]==0)[0],index)))#no self edge
         
@@ -48,7 +56,11 @@ def modify_connections(AM_stat, AM_dyn, sat, index):
     
     #edge deletion using edge_del
     if np.random.random()<val:    #Probability checking for edge deletion
+<<<<<<< HEAD
         #print('player', index, 'wants to delete edge')      ###Comment while RH_PS.py###--------------------------------------------------------
+=======
+        print('player', index, 'wants to delete edge')      ###Comment while RH_PS.py###--------------------------------------------------------
+>>>>>>> 7bb108783e2256362ad1ff8e19552e8007ca021e
         
         del_ind=choose(np.sort(np.where(AM_stat[index]==1)[0]))
         

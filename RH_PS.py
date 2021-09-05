@@ -8,7 +8,11 @@ import Measure
 import time
 
 [adj_mat, player_arr]=settings.initialize(1000)
+<<<<<<< HEAD
 n=5000
+=======
+n=20000
+>>>>>>> 7bb108783e2256362ad1ff8e19552e8007ca021e
 
 #Arrays for plots
 coop_frac_arr=[]
@@ -31,8 +35,13 @@ for i in range(n):
     avgdeg_arr.append(avgdeg)
     ttime.append(i)
     
+<<<<<<< HEAD
     #if i%2490==0:
     print('round :',i)
+=======
+    if i%2490==0:
+        print('round :',i)
+>>>>>>> 7bb108783e2256362ad1ff8e19552e8007ca021e
         
 print(time.time()-tti)
 plt.plot(ttime, coop_frac_arr)
